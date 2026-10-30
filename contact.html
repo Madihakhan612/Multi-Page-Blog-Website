@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSphere | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" type="image/svg+xml">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">
+                <img src="./images/logo.png" alt="BlogSphere logo"></a><button class="menu-toggle"
+                aria-label="Open navigation"
+                onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+            <nav class="nav-links">
+                <a class="active" href="index.html">Home</a>
+                <a class="active" href="blog.html">Blog</a>
+                <a class="active" href="article.html">Categories</a>
+                <a class="active" href="index.html#about">About</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions"><img class="search-icon" src="./icons/search.svg" alt="Search">
+                <a class="btn" href="contact.html#newsletter">Subscribe</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contact-banner">
+            <div class=" container" background: linear-gradient(90deg, #092b45d9, #092b4560),
+                url('./images/Contact.jpeg')center/cover;><span class="eyebrow">✦ Get in Touch</span>
+                <h1>Contact Us</h1>
+                <p>Have a question, suggestion or want to collaborate?<br>We'd love to hear from you!</p>
+            </div>
+        </section>
+        <section class="container contact-layout">
+            <form class="contact-form"
+                onsubmit="event.preventDefault();alert('Thanks for your message! This demo form needs a backend to send emails.');">
+                <h2>Send a Message</h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                <div class="form-grid">
+                    <div class="field"><label for="name">Name *</label><input id="name" required
+                            placeholder="Your name"></div>
+                    <div class="field"><label for="email">Email *</label><input id="email" type="email" required
+                            placeholder="Your email"></div>
+                    <div class="field full"><label for="subject">Subject *</label><select id="subject" required>
+                            <option value="">Select subject</option>
+                            <option>General question</option>
+                            <option>Collaboration</option>
+                            <option>Feedback</option>
+                        </select></div>
+                    <div class="field full"><label for="message">Message *</label><textarea id="message" required
+                            placeholder="Your message..."></textarea></div>
+                    <div class="field full"><button class="btn" type="submit">Send Message ↗</button></div>
+                </div>
+            </form>
+            <aside class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-row">
+                    <div class="info-icon">
+                        <img src="./icons/envelope.svg" alt="Email icon" >
+                    </div>
+                    <div><strong>Email</strong><span>hello@blogsphere.com</span></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon">
+                        <img src="./icons/phone.svg" alt="Phone icon">
+                    </div>
+                    <div><strong>Phone</strong><span>+92 300 1234567</span></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-icon">
+                        <img src="./icons/location.svg" alt="Location icon">
+                    </div>
+                    <div><strong>Location</strong><span>Pakistan</span></div>
+                </div>
+                <h3 style="font-size:15px;margin-top:26px">Follow Me</h3>
+                <div class="socials" style="color:var(--blue);font-size:19px">
+                    <img src="./icons/facebook.svg" alt="Facebook" width="20" height="20">
+                    <img src="./icons/twitter.svg" alt="Twitter" width="20" height="20">
+                    <img src="./icons/instagram.svg" alt="Instagram" width="20" height="20">
+                    <img src="./icons/linkedin.svg" alt="LinkedIn" width="20" height="20">
+                </div>
+                <div class="connect-art">Let's connect<br>and create something<br>amazing!　↗</div>
+            </aside>
+        </section>
+    </main>
+    <footer class="site-footer" id="about">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a class="brand" href="index.html">
+                        <img src="./images/logo.png" alt="BlogSphere"></a>
+                    <p>Better ideas. A brighter tomorrow. Thoughtful stories for curious minds.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="article.html">Categories</a>
+                    <a href="index.html#about">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="socials">
+                        <img src="./icons/facebook.svg" alt="Facebook" width="20" height="20">
+                        <img src="./icons/twitter.svg" alt="Twitter" width="20" height="20">
+                        <img src="./icons/instagram.svg" alt="Instagram" width="20" height="20">
+                        <img src="./icons/linkedin.svg" alt="LinkedIn" width="20" height="20">
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"><span>© 2026 BlogSphere. All rights reserved.</span><span>Privacy Policy　 |　 Terms
+                    &amp; Conditions</span></div>
+        </div>
+    </footer>
+    
+</body>
+</html>
